@@ -1,0 +1,44 @@
+#root {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+#root > * {
+    align-self: center;
+    max-width: 375px;
+}
+#control {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#remaining {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+.item {
+    text-align: left;
+    width: 100%;
+}
+.item label {
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+.item:last-of-type {
+    border-bottom: none;
+}
+.item input {
+    margin-right: 10px;
+}
+.item:hover {
+    background-color: #ccc;
+}
